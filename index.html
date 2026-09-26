@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giorgi Sakandelidze | Developer & Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+    body {
+      background: radial-gradient(circle at 50% 10%, #1e1b4b, #0f172a 80%);
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .container {
+      max-width: 680px;
+      width: 100%;
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 48px 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 40%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+    .game-card {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 32px;
+      text-align: left;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .game-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(99, 102, 241, 0.4);
+    }
+    .game-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      flex-shrink: 0;
+      box-shadow: 0 10px 20px -5px rgba(236, 72, 153, 0.4);
+    }
+    .game-info h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .game-info p {
+      font-size: 0.92rem;
+      color: #94a3b8;
+      line-height: 1.4;
+    }
+    .links-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: #6366f1;
+      color: #ffffff;
+      box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
+    }
+    .btn-primary:hover {
+      background: #4f46e5;
+    }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+    footer {
+      margin-top: 40px;
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: #818cf8;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">DEVELOPER & GAMES</div>
+    <h1>Giorgi Sakandelidze</h1>
+    <p class="subtitle">Indie mobile game developer bringing delightful casual puzzle adventures to iOS and Android.</p>
+
+    <div class="game-card">
+      <div class="game-icon">💎</div>
+      <div class="game-info">
+        <h2>ColorFlow: Match & Merge Saga</h2>
+        <p>A vibrant, offline-first casual puzzle game designed for fun and brain training with endless dynamic flow levels.</p>
+      </div>
+    </div>
+
+    <div class="links-grid">
+      <a href="privacy.html" class="btn btn-outline">Privacy Policy</a>
+      <a href="mailto:sakandelidzedev@gmail.com" class="btn btn-primary">Support & Contact</a>
+      <a href="app-ads.txt" class="btn btn-outline">app-ads.txt</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Giorgi Sakandelidze. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
